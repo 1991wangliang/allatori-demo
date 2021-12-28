@@ -69,7 +69,7 @@ demo下载地址: [http://www.allatori.com/downloads/Allatori-8.0-Demo.zip](http
 
 ```
 
-1. 配置aliiatori.xml 文件
+2. 配置aliiatori.xml 文件
 
 ```java
 <config>
@@ -99,7 +99,7 @@ demo下载地址: [http://www.allatori.com/downloads/Allatori-8.0-Demo.zip](http
 </config>
 ```
 
-1. maven 配置
+3. maven 配置
 
 ```java
             <!-- allatori 文件copy -->

@@ -1,0 +1,25 @@
+<config>
+    <!-- 输入输出混淆的jar文件 -->
+    <input>
+        <jar in="allatori-demo-0.0.1-SNAPSHOT.jar" out="allatori-demo-0.0.1-SNAPSHOT-obfuscated.jar"/>
+    </input>
+
+    <!-- 忽略混淆的classes文件 -->
+    <ignore-classes>
+        <class template="class *Application*" />
+        <class template="class org.springframework*"/>
+    </ignore-classes>
+
+    <!-- 保持不混淆的策略文件 -->
+    <keep-names>
+
+        <!-- protected/public保护的类名及方法名称都保留不混淆 -->
+        <class access="protected+">
+            <field access="protected+" />
+            <method access="protected+" />
+        </class>
+    </keep-names>
+
+    <!-- 混淆过程的日志文件 -->
+    <property name="log-file" value="log.xml"/>
+</config>

@@ -24,7 +24,50 @@ demo下载地址: [http://www.allatori.com/downloads/Allatori-8.0-Demo.zip](http
 
 1. 添加lib到工程中 （allatori.jar）
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d603df8f-004e-4fda-aece-77ef99f79b4f/Untitled.png)
+```
+.
+├── HELP.md
+├── allatori-demo.iml
+├── demo.iml
+├── lib
+│   ├── allatori-annotations.jar
+│   └── allatori.jar
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── codingapi
+    │   │           └── allatori
+    │   │               └── demo
+    │   │                   ├── DemoApplication.java
+    │   │                   ├── license
+    │   │                   │   └── MyLicense.java
+    │   │                   └── model
+    │   │                       └── Demo.java
+    │   └── resources
+    │       ├── allatori.xml
+    │       ├── application.properties
+    │       ├── license
+    │       │   ├── license.base64
+    │       │   └── license.bin
+    │       ├── static
+    │       └── templates
+    └── test
+        ├── java
+        │   └── com
+        │       └── codingapi
+        │           └── allatori
+        │               └── demo
+        │                   ├── DemoApplicationTests.java
+        │                   └── model
+        │                       └── DemoTest.java
+        └── resources
+            └── xxx.csv
+
+```
 
 1. 配置aliiatori.xml 文件
 
@@ -250,7 +293,7 @@ license3j 使用步骤如下
         
         设置自定义的内容 `feature` colunm:type = value 
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c6586a7-90b4-4fe5-9b80-f8bb63dae72f/Untitled.png)
+        https://github.com/verhas/License3j#what-is-a-license-in-license3j 
         
         ```java
         L3j> $ feature id:INT=100
